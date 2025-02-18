@@ -148,7 +148,7 @@ const VideoConfigurator = () => {
     }
   };
 
-  // Load markers when video is uploaded
+  // Loading markers when video is uploaded
   useEffect(() => {
     if (videoUrl) {
       fetchMarkers();
@@ -263,7 +263,7 @@ const VideoConfigurator = () => {
     },
     [markers]
   );
-  // Use useEffect to handle window-dependent code
+   
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.addEventListener("timeupdate", handleTimeUpdate);
